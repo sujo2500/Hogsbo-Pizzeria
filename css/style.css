@@ -16,10 +16,7 @@ header img {
 	width: auto;
 }
 
-.top {
-	
-	
-}
+
 nav {
 	display: flex;
 	flex-direction: row;
@@ -27,13 +24,21 @@ nav {
 
 }
 
+body {
+	background-image: url('../images/pizza.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 80%
+}
 button {
 	text-align: center;
 	color: black;
 	display: inline-block;
 	padding: 5%;
 	color: black;
-	background-color: rgba(5, 5, 5, 0.151);
+	background-color: rgba(5, 5, 5, 0.582);
 	border-radius: 10px;
 }
 
@@ -52,7 +57,6 @@ h1 {
 
 
 main {
-	background-image: url("../images/pizza.jpg");
 	flex: 1;
 	min-height: 70vh;
 	height: 100px;
@@ -72,14 +76,17 @@ main {
 
 footer {
 	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
 	padding-bottom: 0%;
-	background-color: rgba(0, 0, 0, 0.459);
+	background-color: rgba(0, 0, 0, 0.788);
+	color: rgb(252, 252, 252);
 }
 
 footer img {
-	height: 100px;
+	height: 130px;
 	display: flex;
-	align-items: left;
+	align-items: center;
 }
 
 
