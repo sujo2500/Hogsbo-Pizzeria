@@ -5,8 +5,9 @@ html {
 
 header {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 
 }
 
@@ -18,27 +19,40 @@ header img {
 
 nav {
 	display: flex;
+	flex-direction: row;
 	gap: 50px;
-	align-content: center;
 
 }
 
-.logo-text {
+
+
+#logo-text {
+	display: flex;
 	align-items: flex;
+	justify-content: center;
+
 }
 
+h1 {
+	padding-top: 5%;
+	text-align: center;
+}
 body {
-	background-image: url(/images/pizza.jpg);
-	background-size:cover;
-	background-position:top;
-	background-repeat: no-repeat;
-	background-color: rgb(228, 217, 217);
+
 }
 
 main {
 	flex: 1;
+	min-height: 70vh;
+	background-image: url("../images/pizza.jpg");
+	height: 100px;
+	width: auto;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
 }
-.main-content {
+
+#main-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -48,8 +62,6 @@ main {
 
 footer {
 	display: flex;
-
-
 	padding-bottom: 0%;
 }
 
@@ -65,4 +77,5 @@ footer img {
 	flex-direction: column;
 	align-items: center;
 	text-align: right;
+	justify-content: center;
 }
