@@ -160,8 +160,35 @@ footer img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	align-items: center;
-	padding: 1%;
-	gap 3px;
+	padding: 0,5%;
 
 
+}
+
+@media (max-width: 768px) {
+
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header img {
+		height: 90px;
+	}
+
+	#logotext {
+		flex-direction: column;
+	}
+
+	nav {
+		flex-direction: row;
+		align-items: center;
+		gap 10px;
+		width: auto;
+	}
+	.footer-content;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: center;
 }
