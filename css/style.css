@@ -1,8 +1,13 @@
-
-html {
-	scroll-behavior: smooth;
+* {
+	font-style: Helvetica;
 }
 
+#top {
+	display: flexbox;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
 body {
 	background-image: url('../images/pizza.jpg');
 	background-size: cover;
@@ -37,7 +42,7 @@ body {
 }
 
 header {
-	display: flex;
+	display: flexbox;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -111,52 +116,12 @@ main {
 	text-align: center;
 	align-content: center;
 }
-.S1 {
+.S1, .S2, .S3, .S4, .S5, .S6, .S7, .S8, .S9 {
 	background-color: rgba(248, 249, 250, 0.644);
 	padding-bottom: 2%;
 	border-radius: 5%;
 }
-.S2 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
-}
-.S3 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
-}
-.S4 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
-}
-.S5 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
-}
-.S6 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
-}
-.S7 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
-}
-.S8 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
 
-}
-.S9 {
-	background-color: rgba(248, 249, 250, 0.644);
-	padding-bottom: 2%;
-	border-radius: 5%;
-}
 
 #main-content {
 	display: flex;
