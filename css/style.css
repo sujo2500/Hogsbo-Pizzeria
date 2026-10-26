@@ -179,14 +179,20 @@ p.njutAv {
 /*--FAV-content--*/
 h4 {
 	font-size: 200%;
-	font-family: "Libre Baskerville", serif;
+	font-family: "Libre Baskerville";
 	font-weight: 400;
-	padding: 5%;
 }
 .FavText {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
 	background-color: rgb(238, 238, 222);
+	
+}
+
+.favIntro {
+
 }
 .favList {
 	list-style: none;
@@ -225,6 +231,8 @@ footer {
 
 
 }
+
+
 
 
 /*SMALL SCREENS*/
