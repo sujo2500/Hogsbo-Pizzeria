@@ -8,15 +8,28 @@
 	<title>Menu</title>
 </head>
 
-<header>
-	<div class="header">
-<a href="Home.html">
-<img src="images/emblem2.png" alt="Högsbo pizzeria logo">
-</a>
-<h1>Högsbo Pizzeria</h1>
+        <header id="header" class="header">
+            <div id="logo">
+                <a href="index.html">
+            <img src="images/emblem2.png" alt="Högsbo pizzeria logo">
+            </a>
+            <div class="logotext">
+            <h1>Högsbo Pizzeria</h1>
+            <p class="dinPizzeria">Din pizzeria i högsbo</p>
+            </div>
+            </div>
+        
 
-</div>
-</header>
+            <button class="menu-toggle">☰</button>
+            <nav class="menu" id="nav">
+                <ul>
+                <li><a href="menu.html" >Meny</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
 
 <body>
     <main class="menu-main">
@@ -203,12 +216,12 @@
             <a href="om-oss.html">Om oss</a>
             <p><strong>Öppettider</strong><br>
                 <br>
-                Måndag-Fredag 11-21<br>
-                Lördag 12-21<br>
-                Söndag 12-21
+                Må-Fr :  11-21<br>
+                Lördag:  12-21<br>
+                Söndag:  12-21
             </p>
             <p><strong>Adress:</strong> Högsbogatan 13, 414 75 Göteborg<br><br>
-            <strong>Telefon:</strong> +46 31 41 47 57</p>
+            <strong>Telefon:</strong><a class="ringButton" href="tel:+4631414757"> +46 31 41 47 57</a></p>
             </div>
         </footer>
 </body>

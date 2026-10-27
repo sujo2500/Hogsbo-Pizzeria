@@ -1,31 +1,38 @@
 <!DOCTYPE html> 
-
 <html lang="sv">
     <head>
         <meta charset="utf-8">
-        <title>Högsbo Pizzeria</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="javascript/main.js" defer></script>
+
+        <title>Högsbo Pizzeria</title>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/main.js" defer></script>
+
     </head>
 
 
     <body>
         <div class="top">
+
+            <!--header--> 
         <header id="header" class="header">
             <div id="logo">
-            <img src="images/emblem2.png" alt="Högsbo pizzeria logo">
-            <div class="logotext">
-            <h1>Högsbo Pizzeria</h1>
-            <p class="dinPizzeria">Din pizzeria i högsbo</p>
-            </div>
+                <a href="index.html">
+                    <img src="images/emblem2.png" alt="Högsbo pizzeria logo">
+                </a>
+
+                <div class="logotext">
+                    <h1>Högsbo Pizzeria</h1>
+                    <p class="dinPizzeria">Din pizzeria i högsbo</p>
+                </div>
             </div>
         
-
-            <button class="menu-toggle">☰</button>
+           
+            
             <nav class="menu" id="nav">
                 <ul>
                 <li><a href="menu.html" >Meny</a></li>
@@ -33,50 +40,50 @@
                 <li><a href="kontakta-oss.html">Kontakta oss</a></li>
                 </ul>
             </nav>
-            </div>
+
         </header>
 
 
-
+<!----Main----->
         <main class="hero">
             <div class="mainContent"></div>
             <p class="pizzaGeme">Pizza, gemenskap & goda smaker</p>
-            <div id="main-content">
-
-            <h2 class="mainText">Din kvarterspizza.<br>
-            Alltid nära.</h2>
-               <p class="njutAv">Njut av klassiska, ugnsbakade pizzor. 
-                Välkommen in till oss i Högsbo<br>
-                 - eller ta med din favorit hem.</p>
-                <a class="menuButton" href="menu.html">Se vår meny</a>
-            </div>
 
 
-
-            <div class="FavText">
-                <div class="favIntro">
-                <h4>Din favorit finns här</h4>
-
-                <p>Från klassiska pizzor till kebab till fräscha sallader<br>
-                Gott, enkelt och precis som du vill ha det!
-                </p>
+                <div id="main-content">
+                    <h2 class="mainText">Din kvarterspizza.<br>
+                    Alltid nära.</h2>
+                    <p class="njutAv">Njut av klassiska, ugnsbakade pizzor. 
+                    Välkommen in till oss i Högsbo<br>
+                    - eller ta med din favorit hem.</p>
+                    <a class="menuButton" href="menu.html">Se vår meny</a>
                 </div>
 
-                <ul class="favList">
-                    <li>
-                        <span>Capricciosa </span>
-                        <p class="favTag">En favorit</p>
-                    </li>
-                    <li>
-                        <span>Kebabpizza</span>
-                        <p class="favTag">För den hungrige</p>
-                    </li>
-                    <li>
-                        <span>Margarita</span>
-                        <p class="favTag">Klassiken</p>
-                    </li>
-                </ul>
-                </div>
+
+
+                    <div class="FavText">
+                            <div class="favIntro">
+                                <h4>Din favorit finns här</h4>
+                                <p>Från klassiska pizzor till kebab till fräscha sallader<br>
+                                Gott, enkelt och precis som du vill ha det!
+                                </p>
+                            </div>
+
+                                <ul class="favList">
+                                    <li>
+                                        <span>Capricciosa </span>
+                                        <p class="favTag">En favorit</p>
+                                    </li><br>
+                                    <li>
+                                        <span>Kebabpizza</span>
+                                        <p class="favTag">För den hungrige</p>
+                                    </li><br>
+                                    <li>
+                                        <span>Margarita</span>
+                                        <p class="favTag">Klassiken</p>
+                                    </li>
+                                </ul>
+                        </div>
             </div>
         </main>
     
@@ -97,7 +104,7 @@
                 Söndag:  12-21
             </p>
             <p><strong>Adress:</strong> Högsbogatan 13, 414 75 Göteborg<br><br>
-            <strong>Telefon:</strong><a class="ringButton" href="+4631414757"> +46 31 41 47 57</a></p>
+            <strong>Telefon:</strong><a class="ringButton" href="tel:+4631414757"> +46 31 41 47 57</a></p>
             </div>
         </footer>
     </body>
