@@ -1,21 +1,46 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="sv">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Kontakta oss</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header>
-	<div class="header">
-<a href="Home.html">
-<img src="images/emblem2.png" alt="Högsbo pizzeria logo">
-</a>
-<h1>Högsbo Pizzeria</h1>
+        <title>Högsbo Pizzeria</title>
 
-</div>
-</header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/main.js" defer></script>
+
+    </head>
+<body>
+
+        <!--header--> 
+        <header id="header" class="header">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/emblem2.png" alt="Högsbo pizzeria logo">
+                </a>
+
+                <div class="logotext">
+                    <h1>Högsbo Pizzeria</h1>
+                    <p class="dinPizzeria">Din pizzeria i högsbo</p>
+                </div>
+            </div>
+        
+           
+            
+            <nav class="menu" id="nav">
+                <ul>
+                <li><a href="menu.html" >Meny</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
 <body>
 	<main class="main-content">
 	<h1>Vill du komma i kontakt med oss? </h1>
@@ -23,19 +48,26 @@
 	<form><textarea></textarea></form>
 	<button id="Skicka">Skicka</button>
 	</main>
+
+
+
+
+
         <footer class="footer" id="footer">
             <div class="footer-content">
+                <a href="index.html">
             <img class="footer-logo" src="images/emblem2.png" alt="Högsbo pizzeria logo">
+            </a>
             <a href="kontakta-oss.html">Kontakta oss<br></a>
             <a href="om-oss.html">Om oss</a>
             <p><strong>Öppettider</strong><br>
                 <br>
-                Måndag-Fredag 11-21<br>
-                Lördag 12-21<br>
-                Söndag 12-21
+                Må-Fr :  11-21<br>
+                Lördag:  12-21<br>
+                Söndag:  12-21
             </p>
             <p><strong>Adress:</strong> Högsbogatan 13, 414 75 Göteborg<br><br>
-            <strong>Telefon:</strong> +46 31 41 47 57</p>
+            <strong>Telefon:</strong><a class="ringButton" href="tel:+4631414757"> +46 31 41 47 57</a></p>
             </div>
         </footer>
 		
