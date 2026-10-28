@@ -143,14 +143,21 @@ p.njutAv {
 	padding-left: 2%;
 	padding-bottom: 2%;
 }
-.menu-main {
-	min-height: 300vh;
-}
+
 
 .meny-pizza {
-	background-color: rgba(248, 249, 250, 0.644);
+	background-color: rgba(141, 141, 141, 0.644);
 	
 }
+
+
+/*----MNENU---*/
+
+.meny-pizza {
+	display: grid;
+	grid-template-columns: auto;
+}
+
 
 /*--BUTTONS--*/
 .menuButton {
