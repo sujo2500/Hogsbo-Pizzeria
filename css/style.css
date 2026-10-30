@@ -232,27 +232,33 @@ footer {
 /*index-page*/
 @media (max-width: 768px) {
 
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
 
 	.header {
-		flex-wrap: wrap;
 		white-space: normal;
 		flex-direction: column;
 		text-align: start;
-		align-items: normal;
+		align-items: flex-start;
 	}
 
+	.menu {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
 
-
-	.body.index-page {
-		max-width: 100%;
-		white-space: normal;
+	body {
 		background-attachment: scroll;
-		flex-direction: column;
-		align-content: center;
-		min-height: 100vh;
+
 	}
 
-	#logotext {
+	
+
+	.logotext {
 		flex-direction: column;
 	}
 
@@ -267,9 +273,8 @@ footer {
 
 
 	footer {
+		display: flex;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		align-items: center;
-		justify-content: center;
 		gap: 10px;
 		
 	}
@@ -277,7 +282,7 @@ footer {
 
 /*menu-page*/
 body {
-	size: 100vh;
+	
 }
 
 /*about-page*/
