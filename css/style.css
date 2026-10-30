@@ -243,9 +243,9 @@ footer {
 
 
 
-	body {
+	.body.index-page {
+		max-width: 100%;
 		white-space: normal;
-		display:flex-wrap;
 		background-attachment: scroll;
 		flex-direction: column;
 		align-content: center;
