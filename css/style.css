@@ -1,6 +1,4 @@
-* {
-	font-style: "Libre Baskerville", serif;
-}
+
 
 * { box-sizing: border-box;
 }
@@ -84,6 +82,10 @@ h1 {
 
 }
 
+.pizza-title {
+	color: black;
+}
+
 nav {
 	display: block;
 	padding-right: 5%;
@@ -104,7 +106,7 @@ nav {
 
 /*--MAIN CONTENT--*/
 
-body {
+body.index-page {
 
 	background-image: url('../images/pizza.jpg');
 	background-size: cover;
@@ -148,14 +150,38 @@ p.njutAv {
 
 /*----MENU---*/
 
+body.menu-page {
+	background-image: url('../images/pizzamenu.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+
+li {
+	text-decoration: none;
+}
+
 .meny-pizza {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	background-color: rgba(141, 141, 141, 0.644);
+	justify-content: space-between;
 	gap: 20px;
-	margin: 5%;
-	padding: 5%;
+	margin: 3%;
+	padding: 3%;
+
+	color: rgb(0, 0, 0);
+	text-align: center;
+	justify-content: center;
 	
+}
+
+strong {
+	color: rgb(170, 88, 11);
+}
+section {
+	padding: 15%;
+	background-color: rgba(248, 243, 243, 0.836);
 }
 
 
@@ -178,6 +204,7 @@ h4 {
 	font-weight: 400;
 }
 .FavText {
+	margin:auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -248,10 +275,7 @@ footer {
 	}
 
 	.menu {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
+		text-decoration: none;
 	}
 
 	body {
@@ -264,6 +288,7 @@ footer {
 	.logotext {
 		flex-direction: column;
 	}
+
 
 	nav {
 		flex-direction: column;
@@ -279,22 +304,56 @@ footer {
 	}
 
 	footer {
-		display: flex;
+		display: block;
 		flex-wrap: wrap;
 		gap: 10px;
+		white-space: normal;
+		max-width: 100%;
 		
 	}
+
+
 
 
 /*menu-page*/
 body.menu-page {
 	max-width: 100%;
+	white-space: normal;
+	max-width: 100%;
 	background-attachment: scroll;
+	display: block;
+	block-size: 100%;
+justify-content: center;
+overflow-x: hidden;
 }
+
+.meny-pizza {
+	grid-template-columns: 1fr;
+	margin: 10px;
+	white-space: normal;
+	max-width: 100%;
+	display: grid;
+
+}
+
+.footer-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+		
+	}
+
 
 /*about-page*/
 
 
 /*contact-page*/
-
+body.contact-page {
+	background-image: url('../images/pizza.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+} 
 }
