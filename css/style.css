@@ -273,19 +273,23 @@ footer {
 		width: 100%;
 	}
 
-
+	.FavText {
+		white-space: normal;
+		margin: 5%;
+	}
 
 	footer {
 		display: flex;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		flex-wrap: wrap;
 		gap: 10px;
 		
 	}
 
 
 /*menu-page*/
-body {
-	
+body.menu-page {
+	max-width: 100%;
+	background-attachment: scroll;
 }
 
 /*about-page*/
