@@ -4,8 +4,6 @@
 
 
 /*----header----*/
-.top {
-	}
 
 .header {
 	display: flex;
@@ -97,9 +95,7 @@ nav {
 	text-decoration: none;
 }
 
-.menu a {
 
-}
 
 
 
@@ -187,9 +183,7 @@ h4 {
 	
 }
 
-.favIntro {
 
-}
 .favList {
 	list-style: none;
 	display: flex;
@@ -222,8 +216,8 @@ footer {
 .footer-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	align-items: center;
-	padding: 2%;
+	align-items:center;
+
 	white-space: nowrap;
 
 
@@ -232,19 +226,27 @@ footer {
 
 
 
+
+
 /*SMALL SCREENS*/
+/*index-page*/
 @media (max-width: 768px) {
 
 
-	header {
+	.header {
+		flex-wrap: wrap;
+		white-space: normal;
 		flex-direction: column;
 		text-align: start;
+		align-items: normal;
 	}
 
 
 
 	body {
-		display: flex;
+		white-space: normal;
+		display:flex-wrap;
+		background-attachment: scroll;
 		flex-direction: column;
 		align-content: center;
 		min-height: 100vh;
@@ -255,17 +257,29 @@ footer {
 	}
 
 	nav {
-		flex-direction: row;
+		flex-direction: column;
+		flex-wrap: wrap;
 		align-items: center;
 		gap: 10px;
-		width: auto;
+		width: 100%;
 	}
 
 
 
 	footer {
-		display: flex;
-		flex-direction: column;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		
 	}
+
+
+/*menu-page*/
+body {
+	size: 100vh;
+}
+
+/*about-page*/
+
+
+/*contact-page*/
+
 }
