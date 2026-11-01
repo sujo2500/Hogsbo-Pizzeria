@@ -10,3 +10,4 @@ menuButton.addEventListener("click", function(){
         menu.classList.add("open")
     }
 })
+

@@ -82,6 +82,16 @@ h1 {
 
 }
 
+.menu-toggle {
+	cursor: pointer;
+	display: none;
+}
+
+/*--visar menyn när klassen open läggs till--*/
+.menu.open {
+	display: block;
+}
+
 .pizza-title {
 	color: black;
 }
@@ -184,6 +194,10 @@ section {
 	background-color: rgba(248, 243, 243, 0.836);
 }
 
+section.menu-page section {
+	padding: 5%;
+	background-color: rgba(248, 243, 243, 0.5);
+}
 
 /*--BUTTONS--*/
 .menuButton {
@@ -198,11 +212,13 @@ section {
 	font-style: normal;
 }
 
+
 /*--FAV-content--*/
 h4 {
 	font-size: 200%;
 	font-weight: 400;
 }
+
 .FavText {
 	margin:auto;
 	display: flex;
@@ -224,6 +240,7 @@ h4 {
 .favTag {
 	font-size: 12px;
 }
+
 
 /*--FOOTER--*/
 
@@ -247,12 +264,8 @@ footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	align-items:center;
-
 	white-space: nowrap;
-
-
 }
-
 
 
 
@@ -278,8 +291,29 @@ footer {
 		text-decoration: none;
 	}
 
+	.menu-toggle {
+		display:block;
+		align-self: center;
+		font-size: 20px;
+		background: none;
+		color: white;
+		border: none;
+	cursor: pointer;
+	
+}
+
+.menu {
+	display: none;
+}
+
+.menu ul {
+	display: flex;
+	flex-direction: column;
+}
+
+
 	body {
-		background-attachment: scroll;
+		background-attachment:local;
 
 	}
 
@@ -298,10 +332,7 @@ footer {
 		width: 100%;
 	}
 
-	.FavText {
-		white-space: normal;
-		margin: 5%;
-	}
+	
 
 	footer {
 		display: block;
