@@ -187,7 +187,7 @@ li {
 }
 
 strong {
-	color: rgb(170, 88, 11);
+	color: rgba(99, 12, 12, 0.836);
 }
 section {
 	padding: 15%;
@@ -362,7 +362,7 @@ overflow-x: hidden;
 }
 
 .meny-pizza {
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	margin: 10px;
 	white-space: normal;
 	max-width: 100%;
