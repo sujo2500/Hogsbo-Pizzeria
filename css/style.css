@@ -332,7 +332,10 @@ footer {
 		width: 100%;
 	}
 
-	
+	.FavText {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;}
 
 	footer {
 		display: block;
