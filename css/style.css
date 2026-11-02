@@ -248,10 +248,6 @@ h4 {
 /*--FOOTER--*/
 
 footer {
-	display: flex;
-	flex-direction: row;
-	justify-content:flex-start;
-	padding-bottom: 0%;
 	background-color: rgba(0, 0, 0, 0.493);
 	color: rgb(252, 252, 252);
 }
@@ -265,9 +261,11 @@ footer {
 
 .footer-content {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	align-items:center;
-	white-space: nowrap;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
 }
 
 /*--ABOUT PAGE--*/
@@ -442,9 +440,7 @@ overflow-x: hidden;
 		color: #FF8585;
 	}
 
-	#opening-status.closed .status-dot {
-		background-color: red;
-	}
+	#opening-status.closed .
 
 	.footer {
 		display: flex;
@@ -455,7 +451,7 @@ overflow-x: hidden;
 
 	.footer-content {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		width: 100%;

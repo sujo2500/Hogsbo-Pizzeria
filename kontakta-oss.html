@@ -46,7 +46,9 @@
         <div class="contact-form">
 	<h2>Vill du komma i kontakt med oss?</h2>
         <p>skriv ett meddelande i fältet nedan</p>
-	<form action="#" method="post">
+
+
+	<form action="mailto:samajabar@gmail.com" method="post" enctype="text/plain">
         <div class="form-control">
             <label for="name">Namn</label>
             <input type="text" id="name" name="name" placeholder="Ditt namn" required>
@@ -54,18 +56,18 @@
 
         <div class="form-control">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Din mailadress" required>
+            <input type="email" id="email" placeholder="Din mailadress" required>
         </div>
 
         <div class="form-control">
-            <label for="message"></label><br>
+            <label for="message">Meddelande</label><br>
 
             <textarea name="message" id="message" rows="5"
             placeholder="Ditt meddelande"required></textarea>
         </div>
 
         <div class="form-control">
-            <button id="Skicka" a href="mailto:susan.johansson00@gmail.com">Skicka</button>
+            <button id="submit" id="skicka">Skicka</button>
         </div>
     </form>
 	
@@ -89,12 +91,12 @@
                 <div id="opening-status">
                     <span class="status-dot"></span>
                     <span id="status-text">Kontrollerar...</span>
-                </div>
+                
                 <h3>Öppettider</h3>
                 Må-Fr :  11-21<br>
                 Lördag:  12-21<br>
                 Söndag:  12-21
-            </p>
+            </div>
             <p><strong>Adress:</strong> Högsbogatan 13, 414 75 Göteborg<br><br>
             <strong>Telefon:</strong><a class="ringButton" href="tel:+4631414757"> +46 31 41 47 57</a></p>
             </div>

@@ -1,5 +1,6 @@
 "use strict";
 
+/*menu toggle*/
 const menuButton = document.querySelector (".menu-toggle");
 const menu = document.querySelector(".menu");
 
@@ -10,6 +11,30 @@ menuButton.addEventListener("click", function(){
         menu.classList.add("open")
     }
 })
+
+
+/*Send email*/
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+    
+        const subject = "meddelande från" + name;
+    const body = "namn:" + name + "\n" +
+                 "email:" + email + "\n\n" +
+                 "meddelande:" + message;
+                
+                window.location.href = "mailto:samajabar@gmail.com" + 
+            "?subject=" + encodeURIComponent(subject) + 
+            "&body=" + encodeURIComponent(body);
+        });
+    }
+
 
 
 /*opening hours*/
