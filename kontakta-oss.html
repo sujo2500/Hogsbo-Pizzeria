@@ -29,7 +29,7 @@
             </div>
         
            
-            
+            <button class="menu-toggle">☰</button>
             <nav class="menu" id="nav">
                 <ul>
                 <li><a href="menu.html" >Meny</a></li>
@@ -43,11 +43,36 @@
 
 <body>
 	<main class="main-content">
-	<p><strong>Vill du komma i kontakt med oss?</strong><br>
-        skriv ett meddelande i fältet nedan</p>
-	<form><textarea></textarea></form>
-	<button id="Skicka">Skicka</button>
+        <div class="contact-form">
+	<h2>Vill du komma i kontakt med oss?</h2>
+        <p>skriv ett meddelande i fältet nedan</p>
+	<form action="#" method="post">
+        <div class="form-control">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Din mailadress" required>
+        </div>
+
+        <div class="form-control">
+            <label for="message"></label><br>
+
+            <textarea name="message" id="message" rows="5"
+            placeholder="Ditt meddelande"required></textarea>
+        </div>
+
+        <div class="form-control">
+            <button id="Skicka" a href="mailto:susan.johansson00@gmail.com">Skicka</button>
+        </div>
     </form>
+	
+    </form>
+
+
+    </div>
 	</main>
 
 
@@ -56,13 +81,16 @@
 
         <footer class="footer" id="footer">
             <div class="footer-content">
-                <a href="index.html">
+            <a href="index.html">
             <img class="footer-logo" src="images/emblem2.png" alt="Högsbo pizzeria logo">
             </a>
             <a href="kontakta-oss.html">Kontakta oss<br></a>
-            <a href="om-oss.html">Om oss</a>
-            <p><strong>Öppettider</strong><br>
-                <br>
+            <a href="om-oss.html">Om oss</a><br>
+                <div id="opening-status">
+                    <span class="status-dot"></span>
+                    <span id="status-text">Kontrollerar...</span>
+                </div>
+                <h3>Öppettider</h3>
                 Må-Fr :  11-21<br>
                 Lördag:  12-21<br>
                 Söndag:  12-21

@@ -1,4 +1,11 @@
 
+:root {
+	--primary-color: #f5f5f5;
+	--secondary-color: #333;
+	--accent-color: #ff6600;
+	--font-family: 'Arial', sans-serif;
+	--font-size: 16px;
+}
 
 * { box-sizing: border-box;
 }
@@ -10,7 +17,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	background-color: rgba(0, 0, 0, 0.897);
+	background-color: rgba(0, 0, 0, 0.733);
 	color: white;
 }
 
@@ -26,11 +33,6 @@ a {
 	color: rgb(255, 255, 255);
 }
 
-li {
-	padding: 1%;
-	text-align: center;
-	font-size:large;
-}
 
 button {
 	text-align: center;
@@ -67,7 +69,7 @@ h1 {
 }
 
 .dinPizzeria {
-	color: rgba(245, 125, 55, 0.932);
+	color: rgba(196, 100, 45, 0.932);
 	font-size: small;
 }
 
@@ -127,7 +129,6 @@ body.index-page {
 }
 
 .hero {
-	background-color: ('../images/pizza.jpg');
 	min-height: 100vh;
 	font-style: italic;
 	
@@ -158,6 +159,7 @@ p.njutAv {
 
 
 
+
 /*----MENU---*/
 
 body.menu-page {
@@ -169,7 +171,9 @@ body.menu-page {
 }
 
 li {
-	text-decoration: none;
+	padding: 1%;
+	text-align: center;
+	font-size:large;
 }
 
 .meny-pizza {
@@ -186,18 +190,16 @@ li {
 	
 }
 
-strong {
-	color: rgba(99, 12, 12, 0.836);
+.meny-pizza li strong {
+	color: rgb(148, 22, 22);
+	white-space: nowrap;
 }
 section {
 	padding: 15%;
 	background-color: rgba(248, 243, 243, 0.836);
 }
 
-section.menu-page section {
-	padding: 5%;
-	background-color: rgba(248, 243, 243, 0.5);
-}
+
 
 /*--BUTTONS--*/
 .menuButton {
@@ -215,6 +217,7 @@ section.menu-page section {
 
 /*--FAV-content--*/
 h4 {
+	color: rgba(2, 2, 2, 0.897);
 	font-size: 200%;
 	font-weight: 400;
 }
@@ -246,10 +249,10 @@ h4 {
 
 footer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content:flex-start;
 	padding-bottom: 0%;
-	background-color: rgba(0, 0, 0, 0.863);
+	background-color: rgba(0, 0, 0, 0.493);
 	color: rgb(252, 252, 252);
 }
 
@@ -267,8 +270,47 @@ footer {
 	white-space: nowrap;
 }
 
+/*--ABOUT PAGE--*/
+body.about-page {
+	background-image: url('../images/pizza.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+body.contact-page {
+	background-image: url('../images/pizza.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
 
+/*--CONTACT PAGE--*/
+body.contact-page {
+	background-image: url('../images/pizza.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+.form-control {
+	padding: 10px;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 3%;
+	background-color: rgba(255, 255, 255, 0.801);
+	margin: 3%;
+}
 
 
 /*SMALL SCREENS*/
@@ -335,14 +377,16 @@ footer {
 	.FavText {
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;}
+		justify-content: center;
+		margin: 0 auto;
+	}
 
 	footer {
-		display: block;
-		flex-wrap: wrap;
-		gap: 10px;
-		white-space: normal;
+		display: flex;
+		flex-direction: column;
 		max-width: 100%;
+		align-items: center;
+		justify-content: center;
 		
 	}
 
@@ -362,32 +406,82 @@ overflow-x: hidden;
 }
 
 .meny-pizza {
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	margin: 10px;
 	white-space: normal;
 	max-width: 100%;
 	display: grid;
+	text-wrap: balance;
 
 }
 
-.footer-content {
+@media (max-width: 480px) {
+
+	#opening-status {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.status-dot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #999;
+	}
+
+	#opening-status.open .status-dot {
+		background-color: green;
+	}
+
+	#opening-status.open .status-dot {
+		background-color: green;
+	}
+
+	#opening-status.closed {
+		color: #FF8585;
+	}
+
+	#opening-status.closed .status-dot {
+		background-color: red;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+	.footer-content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 5px;
-		
+		justify-content: center;
+		width: 100%;
 	}
+
+	.meny-pizza {
+		grid-template-columns: 1fr;
+		margin: 10px;
+		white-space: normal;
+		max-width: 100%;
+		display: grid;
+		text-wrap: balance;
+	}
+}
+
 
 
 /*about-page*/
-
-
-/*contact-page*/
-body.contact-page {
+body.about-page {
 	background-image: url('../images/pizza.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-} 
+}
+
+/*contact-page*/
+ 
 }
