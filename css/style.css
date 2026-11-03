@@ -255,6 +255,7 @@ footer {
 .footer-logo {
 	height: 130px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
@@ -321,7 +322,7 @@ body.contact-page {
 	flex-direction: column;
 	gap: 10px;
 	padding: 3%;
-	background-color: rgba(248, 243, 243, 0.836);
+	background-color: rgba(255, 255, 255, 0.801);
 	margin: 3%;
 }
 
@@ -336,6 +337,7 @@ body.contact-page {
 	}
 
 	.header {
+
 		white-space: normal;
 		flex-direction: column;
 		text-align: start;
@@ -388,19 +390,17 @@ body.contact-page {
 	}
 
 	.FavText {
-		flex-direction: row;
+		flex-direction: balance;
 		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0 auto;
 	}
 
-	footer {
+	.footer-content {
 		display: flex;
 		flex-direction: column;
-		max-width: 100%;
 		align-items: center;
 		justify-content: center;
-		
 	}
 
 
@@ -430,6 +430,10 @@ overflow-x: hidden;
 
 @media (max-width: 480px) {
 
+		h1 {
+			font-size: 150%;
+		}
+
 	#opening-status {
 		display: flex;
 		align-items: center;
@@ -458,19 +462,14 @@ overflow-x: hidden;
 	#opening-status.closed .
 
 	.footer {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		height: auto;
 	}
 
-	.footer-content {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-	}
 
 	.meny-pizza {
 		grid-template-columns: 1fr;
