@@ -228,7 +228,7 @@ h4 {
 	flex-direction: row;
 	justify-content: center;
 	justify-content: space-around;
-	background-color: rgba(238, 238, 225, 0.801);
+	background-color: rgba(248, 243, 243, 0.836);
 	
 }
 
@@ -255,6 +255,7 @@ footer {
 .footer-logo {
 	height: 130px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
@@ -286,7 +287,22 @@ body.contact-page {
 	background-attachment: fixed;
 }
 
+.h1-about {
+	color: rgba(2, 2, 2, 0.897);
+	font-size: 400%;
+	padding-left: 2%;
+}
 
+.about-us {
+	color: rgba(2, 2, 2, 0.897);
+	background-color: rgba(248, 243, 243, 0.836);
+	font-size: 120%;
+	padding	: 2%;
+	margin: 3%;
+	text-align: center;
+	text-wrap: balance;
+	font-style: italic;
+}
 /*--CONTACT PAGE--*/
 body.contact-page {
 	background-image: url('../images/pizza.jpg');
@@ -321,6 +337,7 @@ body.contact-page {
 	}
 
 	.header {
+
 		white-space: normal;
 		flex-direction: column;
 		text-align: start;
@@ -373,19 +390,17 @@ body.contact-page {
 	}
 
 	.FavText {
-		flex-direction: row;
+		flex-direction: balance;
 		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0 auto;
 	}
 
-	footer {
+	.footer-content {
 		display: flex;
 		flex-direction: column;
-		max-width: 100%;
 		align-items: center;
 		justify-content: center;
-		
 	}
 
 
@@ -415,6 +430,10 @@ overflow-x: hidden;
 
 @media (max-width: 480px) {
 
+		h1 {
+			font-size: 150%;
+		}
+
 	#opening-status {
 		display: flex;
 		align-items: center;
@@ -443,19 +462,14 @@ overflow-x: hidden;
 	#opening-status.closed .
 
 	.footer {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		height: auto;
 	}
 
-	.footer-content {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-	}
 
 	.meny-pizza {
 		grid-template-columns: 1fr;
