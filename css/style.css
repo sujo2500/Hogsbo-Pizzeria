@@ -1,497 +1,434 @@
-
-:root {
-	--primary-color: #f5f5f5;
-	--secondary-color: #333;
-	--accent-color: #ff6600;
-	--font-family: 'Arial', sans-serif;
-	--font-size: 16px;
+:root  {
+  --primary-color: #f5f5f5;
+  --secondary-color: #333;
+  --accent-color: #ff6600;
+  --font-family: 'Arial', sans-serif;
+  --font-size: 16px;
 }
 
-* { box-sizing: border-box;
+*  {
+  box-sizing: border-box;
 }
 
-/*----header----*/
-
-.header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	background-color: rgba(0, 0, 0, 0.733);
-	color: white;
+/*----header----*/ .header  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.733);
+  color: white;
 }
 
-
-
-header img {
-	height: 130px;
-	width: auto;
+header img  {
+  height: 130px;
+  width: auto;
 }
 
-
-a {
-	color: rgb(255, 255, 255);
+a  {
+  color: rgb(255, 255, 255);
 }
 
-
-button {
-	text-align: center;
-	color: black;
-	display: inline-block;
-	padding: 2%;
-	color: black;
-	background-color: rgba(5, 5, 5, 0.582);
-	border-radius: 10px;
+button  {
+  text-align: center;
+  color: black;
+  display: inline-block;
+  padding: 2%;
+  color: black;
+  background-color: rgba(5, 5, 5, 0.582);
+  border-radius: 10px;
 }
 
-.skicka {
-	color: rgb(253, 253, 253);
+.skicka  {
+  color: rgb(253, 253, 253);
 }
 
-
-
-h3 {
-	text-align: center;
+h3  {
+  text-align: center;
 }
 
-/*-----logo-----*/
-#logo {
-	padding-left: 30px;
-	display: flex;
-	align-items: center;
-	gap: 5%
+/*-----logo-----*/ #logo  {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+gap: 5% }
+
+h1  {
+  color: white;
+  display: block;
+  white-space: nowrap;
 }
 
-h1 {
-	color: white;
-	display: block;
-	white-space: nowrap;
+.dinPizzeria  {
+  color: rgba(196, 100, 45, 0.932);
+  font-size: small;
 }
 
-.dinPizzeria {
-	color: rgba(196, 100, 45, 0.932);
-	font-size: small;
+/*----menu----*/ .menu  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 12px;
+  text-decoration: none;
 }
 
-/*----menu----*/
-.menu {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 100%;
-	font-size: 12px;
-	text-decoration: none;
-
+.menu-toggle  {
+  cursor: pointer;
+  display: none;
 }
 
-.menu-toggle {
-	cursor: pointer;
-	display: none;
+/*--visar menyn när klassen open läggs till--*/ .menu.open  {
+  display: block;
 }
 
-/*--visar menyn när klassen open läggs till--*/
-.menu.open {
-	display: block;
+.pizza-title  {
+  color: black;
 }
 
-.pizza-title {
-	color: black;
+nav  {
+  display: block;
+  padding-right: 5%;
+  white-space: nowrap;
 }
 
-nav {
-	display: block;
-	padding-right: 5%;
-	white-space: nowrap;
-}
-.menu ul {
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	gap: 20px;
-	justify-content: left;
-	text-decoration: none;
+.menu ul  {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  justify-content: left;
+  text-decoration: none;
 }
 
-
-
-
-
-/*--MAIN CONTENT--*/
-
-body.index-page {
-
-	background-image: url('../images/pizza.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	min-height: 100vh;
+/*--MAIN CONTENT--*/ body.index-page  {
+  background-image: url('../images/pizza.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-.hero {
-	min-height: 100vh;
-	font-style: italic;
-	
+.hero  {
+  min-height: 100vh;
+  font-style: italic;
 }
 
-p.pizzaGeme {
-	font-size: 110%;
-	padding-left: 3%;
+p.pizzaGeme  {
+  font-size: 110%;
+  padding-left: 3%;
 }
 
-.mainContent {
-	min-height: 10vh;
-	
+.mainContent  {
+  min-height: 10vh;
 }
 
-.mainText {
-	color: rgba(2, 2, 2, 0.897);
-	font-size:400%;
-	padding-left: 2%;
+.mainText  {
+  color: rgba(2, 2, 2, 0.897);
+  font-size:400%;
+  padding-left: 2%;
 }
 
-p.njutAv {
-	font-size: large;
-	padding-left: 2%;
-	padding-bottom: 2%;
+p.njutAv  {
+  font-size: large;
+  padding-left: 2%;
+  padding-bottom: 2%;
 }
 
-
-
-
-
-/*----MENU---*/
-
-body.menu-page {
-	background-image: url('../images/pizzamenu.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;	
+/*----MENU---*/ body.menu-page  {
+  background-image: url('../images/pizzamenu.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-li {
-	padding: 1%;
-	text-align: center;
-	font-size:large;
+li  {
+  padding: 1%;
+  text-align: center;
+  font-size:large;
 }
 
-.meny-pizza {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	justify-content: space-between;
-	gap: 20px;
-	margin: 3%;
-	padding: 3%;
-
-	color: rgb(0, 0, 0);
-	text-align: center;
-	justify-content: center;
-	
+.meny-pizza  {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 3%;
+  padding: 3%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
 }
 
-.meny-pizza li strong {
-	color: rgb(148, 22, 22);
-	white-space: nowrap;
-}
-section {
-	padding: 15%;
-	background-color: rgba(248, 243, 243, 0.836);
+.meny-pizza li strong  {
+  color: rgb(148, 22, 22);
+  white-space: nowrap;
 }
 
-
-
-/*--BUTTONS--*/
-.menuButton {
-	display: inline-block;
-	padding: 2%;
-	color: rgb(250, 247, 247);
-	background-color: rgba(0, 0, 0, 0.767);
-	border-radius: 20px;
-	text-decoration: none;
-	margin-left: 2%;
-	margin-bottom: 4%;
-	font-style: normal;
+section  {
+  padding: 15%;
+  background-color: rgba(248, 243, 243, 0.836);
 }
 
-
-/*--FAV-content--*/
-h4 {
-	color: rgba(2, 2, 2, 0.897);
-	font-size: 200%;
-	font-weight: 400;
+/*--BUTTONS--*/ .menuButton  {
+  display: inline-block;
+  padding: 2%;
+  color: rgb(250, 247, 247);
+  background-color: rgba(0, 0, 0, 0.767);
+  border-radius: 20px;
+  text-decoration: none;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  font-style: normal;
 }
 
-.FavText {
-	margin:auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	justify-content: space-around;
-	background-color: rgba(248, 243, 243, 0.836);
-	
+/*--FAV-content--*/ h4  {
+  color: rgba(2, 2, 2, 0.897);
+  font-size: 200%;
+  font-weight: 400;
 }
 
-
-.favList {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+.FavText  {
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(248, 243, 243, 0.836);
 }
 
-.favTag {
-	font-size: 12px;
+.favList  {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-
-/*--FOOTER--*/
-
-footer {
-	background-color: rgba(0, 0, 0, 0.493);
-	color: rgb(252, 252, 252);
+.favTag  {
+  font-size: 12px;
 }
 
-.footer-logo {
-	height: 130px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+/*--FOOTER--*/ footer  {
+  background-color: rgba(0, 0, 0, 0.623);
+  color: rgb(252, 252, 252);
 }
 
-
-.footer-content {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items:center;
-	text-align: center;
-	padding: 20px;
-	margin: 0 auto;
+.footer-logo  {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*--ABOUT PAGE--*/
-body.about-page {
-	background-image: url('../images/pizza.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	min-height: 100vh;
+.footer-content  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items:center;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-body.contact-page {
-	background-image: url('../images/pizza.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+/*--ABOUT PAGE--*/ body.about-page  {
+  background-image: url('../images/pizza.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-.h1-about {
-	color: rgba(2, 2, 2, 0.897);
-	font-size: 400%;
-	padding-left: 2%;
+body.contact-page  {
+  background-image: url('../images/pizza.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.about-us {
-	color: rgba(2, 2, 2, 0.897);
-	background-color: rgba(248, 243, 243, 0.836);
-	font-size: 120%;
-	padding	: 2%;
-	margin: 3%;
-	text-align: center;
-	text-wrap: balance;
-	font-style: italic;
-}
-/*--CONTACT PAGE--*/
-body.contact-page {
-	background-image: url('../images/pizza.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	min-height: 100vh;
+.h1-about  {
+  color: rgba(2, 2, 2, 0.897);
+  font-size: 400%;
+  padding-left: 2%;
 }
 
-.form-control {
-	padding: 10px;
+.about-us  {
+  color: rgba(2, 2, 2, 0.897);
+  background-color: rgba(248, 243, 243, 0.836);
+  font-size: 120%;
+  padding : 2%;
+  margin: 3%;
+  text-align: center;
+  text-wrap: balance;
+  font-style: italic;
 }
 
-.contact-form {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	padding: 3%;
-	background-color: rgba(255, 255, 255, 0.801);
-	margin: 3%;
+/*--CONTACT PAGE--*/ body.contact-page  {
+  background-image: url('../images/pizza.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-
-/*SMALL SCREENS*/
-/*index-page*/
-@media (max-width: 768px) {
-
-	html, body {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-
-	.header {
-
-		white-space: normal;
-		flex-direction: column;
-		text-align: start;
-		align-items: start;
-	}
-
-	.menu {
-		text-decoration: none;
-	}
-
-	.menu-toggle {
-		display:block;
-		align-self: center;
-		font-size: 20px;
-		background: none;
-		color: white;
-		border: none;
-	cursor: pointer;
-	
+.form-control  {
+  padding: 10px;
 }
 
-.menu {
-	display: none;
+.contact-form  {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.801);
+  margin: 3%;
 }
 
-.menu ul {
-	display: flex;
-	flex-direction: column;
-}
+/*SMALL SCREENS*/ /*index-page*/ @media (max-width: 768px)  {
+  html, body  {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
+  .header  {
+    white-space: normal;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+  }
 
-	body {
-		background-attachment:local;
+  .menu  {
+    text-decoration: none;
+  }
 
-	}
+  .menu-toggle  {
+    display:block;
+    align-self: center;
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 
-	
+  .menu  {
+    display: none;
+  }
 
-	.logotext {
-		flex-direction: column;
-	}
+  .menu ul  {
+    display: flex;
+    flex-direction: column;
+  }
 
+  body  {
+    background-attachment:local;
+  }
 
-	nav {
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 10px;
-		width: 100%;
-	}
+  .logotext  {
+    flex-direction: column;
+  }
 
-	.FavText {
-		flex-direction: balance;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin: 0 auto;
-	}
+  nav  {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
 
-	.footer-content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+  .FavText  {
+    flex-direction: balance;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
+  .footer-content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  /*menu-page*/ body.menu-page  {
+    max-width: 100%;
+    white-space: normal;
+    max-width: 100%;
+    background-attachment: scroll;
+    display: block;
+    block-size: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+  }
 
+  .meny-pizza  {
+    grid-template-columns: 1fr;
+    margin: 10px;
+    white-space: normal;
+    max-width: 100%;
+    display: grid;
+    text-wrap: balance;
+  }
 
-/*menu-page*/
-body.menu-page {
-	max-width: 100%;
-	white-space: normal;
-	max-width: 100%;
-	background-attachment: scroll;
-	display: block;
-	block-size: 100%;
-justify-content: center;
-overflow-x: hidden;
-}
+  @media (max-width: 480px)  {
+    h1  {
+      font-size: 150%;
+    }
 
-.meny-pizza {
-	grid-template-columns: 1fr;
-	margin: 10px;
-	white-space: normal;
-	max-width: 100%;
-	display: grid;
-	text-wrap: balance;
+    #opening-status  {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
 
-}
+    .status-dot  {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #999;
+    }
 
-@media (max-width: 480px) {
+    #opening-status.open .status-dot  {
+      background-color: green;
+    }
 
-		h1 {
-			font-size: 150%;
-		}
+    #opening-status.open .status-dot  {
+      background-color: green;
+    }
 
-	#opening-status {
-		display: flex;
-		align-items: center;
-		gap: 5px;
-	}
+    #opening-status.closed  {
+      color: #FF8585;
+    }
 
-	.status-dot {
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-		background-color: #999;
-	}
+    #opening-status.closed . .footer  {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+    }
 
-	#opening-status.open .status-dot {
-		background-color: green;
-	}
+    .meny-pizza  {
+      grid-template-columns: 1fr;
+      margin: 10px;
+      white-space: normal;
+      max-width: 100%;
+      display: grid;
+      text-wrap: balance;
+    }
 
-	#opening-status.open .status-dot {
-		background-color: green;
-	}
+  }
 
-	#opening-status.closed {
-		color: #FF8585;
-	}
+  /*about-page*/ body.about-page  {
+    background-image: url('../images/pizza.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
-	#opening-status.closed .
-
-	.footer {
-		display: grid;
-		grid-template-columns: 1fr;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: auto;
-	}
-
-
-	.meny-pizza {
-		grid-template-columns: 1fr;
-		margin: 10px;
-		white-space: normal;
-		max-width: 100%;
-		display: grid;
-		text-wrap: balance;
-	}
-}
-
-
-
-/*about-page*/
-body.about-page {
-	background-image: url('../images/pizza.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-
-/*contact-page*/
- 
-}
+/*contact-page*/ }
